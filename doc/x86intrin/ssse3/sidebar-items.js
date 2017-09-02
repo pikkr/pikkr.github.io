@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["mm_abs_epi16",""],["mm_abs_epi32",""],["mm_abs_epi8",""],["mm_alignr_epi8",""],["mm_hadd_epi16",""],["mm_hadd_epi32",""],["mm_hadds_epi16",""],["mm_hsub_epi16",""],["mm_hsub_epi32",""],["mm_hsubs_epi16",""],["mm_maddubs_epi16",""],["mm_mulhrs_epi16",""],["mm_shuffle_epi8",""],["mm_sign_epi16",""],["mm_sign_epi32",""],["mm_sign_epi8",""]]});

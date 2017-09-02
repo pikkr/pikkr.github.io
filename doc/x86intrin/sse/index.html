@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `sse` mod in crate `x86intrin`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, sse">
+
+    <title>x86intrin::sse - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Module sse</p><div class="block items"><ul><li><a href="#constants">Constants</a></li><li><a href="#functions">Functions</a></li></ul></div><p class='location'><a href='../index.html'>x86intrin</a></p><script>window.sidebarCurrent = {name: 'sse', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>x86intrin</a>::<wbr><a class="mod" href=''>sse</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/x86intrin/sse.rs.html#1-1489' title='goto source code'>[src]</a></span></h1>
+<h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_EXCEPT_DENORM.html"
+                                  title='constant x86intrin::sse::MM_EXCEPT_DENORM'>MM_EXCEPT_DENORM</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_EXCEPT_DIV_ZERO.html"
+                                  title='constant x86intrin::sse::MM_EXCEPT_DIV_ZERO'>MM_EXCEPT_DIV_ZERO</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_EXCEPT_INEXACT.html"
+                                  title='constant x86intrin::sse::MM_EXCEPT_INEXACT'>MM_EXCEPT_INEXACT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_EXCEPT_INVALID.html"
+                                  title='constant x86intrin::sse::MM_EXCEPT_INVALID'>MM_EXCEPT_INVALID</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_EXCEPT_MASK.html"
+                                  title='constant x86intrin::sse::MM_EXCEPT_MASK'>MM_EXCEPT_MASK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_EXCEPT_OVERFLOW.html"
+                                  title='constant x86intrin::sse::MM_EXCEPT_OVERFLOW'>MM_EXCEPT_OVERFLOW</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_EXCEPT_UNDERFLOW.html"
+                                  title='constant x86intrin::sse::MM_EXCEPT_UNDERFLOW'>MM_EXCEPT_UNDERFLOW</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_FLUSH_ZERO_MASK.html"
+                                  title='constant x86intrin::sse::MM_FLUSH_ZERO_MASK'>MM_FLUSH_ZERO_MASK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_FLUSH_ZERO_OFF.html"
+                                  title='constant x86intrin::sse::MM_FLUSH_ZERO_OFF'>MM_FLUSH_ZERO_OFF</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_FLUSH_ZERO_ON.html"
+                                  title='constant x86intrin::sse::MM_FLUSH_ZERO_ON'>MM_FLUSH_ZERO_ON</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_HINT_NTA.html"
+                                  title='constant x86intrin::sse::MM_HINT_NTA'>MM_HINT_NTA</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_HINT_T0.html"
+                                  title='constant x86intrin::sse::MM_HINT_T0'>MM_HINT_T0</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_HINT_T1.html"
+                                  title='constant x86intrin::sse::MM_HINT_T1'>MM_HINT_T1</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_HINT_T2.html"
+                                  title='constant x86intrin::sse::MM_HINT_T2'>MM_HINT_T2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_MASK_DENORM.html"
+                                  title='constant x86intrin::sse::MM_MASK_DENORM'>MM_MASK_DENORM</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_MASK_DIV_ZERO.html"
+                                  title='constant x86intrin::sse::MM_MASK_DIV_ZERO'>MM_MASK_DIV_ZERO</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_MASK_INEXACT.html"
+                                  title='constant x86intrin::sse::MM_MASK_INEXACT'>MM_MASK_INEXACT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_MASK_INVALID.html"
+                                  title='constant x86intrin::sse::MM_MASK_INVALID'>MM_MASK_INVALID</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_MASK_MASK.html"
+                                  title='constant x86intrin::sse::MM_MASK_MASK'>MM_MASK_MASK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_MASK_OVERFLOW.html"
+                                  title='constant x86intrin::sse::MM_MASK_OVERFLOW'>MM_MASK_OVERFLOW</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_MASK_UNDERFLOW.html"
+                                  title='constant x86intrin::sse::MM_MASK_UNDERFLOW'>MM_MASK_UNDERFLOW</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_ROUND_DOWN.html"
+                                  title='constant x86intrin::sse::MM_ROUND_DOWN'>MM_ROUND_DOWN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_ROUND_MASK.html"
+                                  title='constant x86intrin::sse::MM_ROUND_MASK'>MM_ROUND_MASK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_ROUND_NEAREST.html"
+                                  title='constant x86intrin::sse::MM_ROUND_NEAREST'>MM_ROUND_NEAREST</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_ROUND_TOWARD_ZERO.html"
+                                  title='constant x86intrin::sse::MM_ROUND_TOWARD_ZERO'>MM_ROUND_TOWARD_ZERO</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MM_ROUND_UP.html"
+                                  title='constant x86intrin::sse::MM_ROUND_UP'>MM_ROUND_UP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_add_ps.html"
+                                  title='fn x86intrin::sse::mm_add_ps'>mm_add_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_add_ss.html"
+                                  title='fn x86intrin::sse::mm_add_ss'>mm_add_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_and_ps.html"
+                                  title='fn x86intrin::sse::mm_and_ps'>mm_and_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_andnot_ps.html"
+                                  title='fn x86intrin::sse::mm_andnot_ps'>mm_andnot_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpeq_ps.html"
+                                  title='fn x86intrin::sse::mm_cmpeq_ps'>mm_cmpeq_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpeq_ss.html"
+                                  title='fn x86intrin::sse::mm_cmpeq_ss'>mm_cmpeq_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpge_ps.html"
+                                  title='fn x86intrin::sse::mm_cmpge_ps'>mm_cmpge_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpge_ss.html"
+                                  title='fn x86intrin::sse::mm_cmpge_ss'>mm_cmpge_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpgt_ps.html"
+                                  title='fn x86intrin::sse::mm_cmpgt_ps'>mm_cmpgt_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpgt_ss.html"
+                                  title='fn x86intrin::sse::mm_cmpgt_ss'>mm_cmpgt_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmple_ps.html"
+                                  title='fn x86intrin::sse::mm_cmple_ps'>mm_cmple_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmple_ss.html"
+                                  title='fn x86intrin::sse::mm_cmple_ss'>mm_cmple_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmplt_ps.html"
+                                  title='fn x86intrin::sse::mm_cmplt_ps'>mm_cmplt_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmplt_ss.html"
+                                  title='fn x86intrin::sse::mm_cmplt_ss'>mm_cmplt_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpneq_ps.html"
+                                  title='fn x86intrin::sse::mm_cmpneq_ps'>mm_cmpneq_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpneq_ss.html"
+                                  title='fn x86intrin::sse::mm_cmpneq_ss'>mm_cmpneq_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpnge_ps.html"
+                                  title='fn x86intrin::sse::mm_cmpnge_ps'>mm_cmpnge_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpnge_ss.html"
+                                  title='fn x86intrin::sse::mm_cmpnge_ss'>mm_cmpnge_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpngt_ps.html"
+                                  title='fn x86intrin::sse::mm_cmpngt_ps'>mm_cmpngt_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpngt_ss.html"
+                                  title='fn x86intrin::sse::mm_cmpngt_ss'>mm_cmpngt_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpnle_ps.html"
+                                  title='fn x86intrin::sse::mm_cmpnle_ps'>mm_cmpnle_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpnle_ss.html"
+                                  title='fn x86intrin::sse::mm_cmpnle_ss'>mm_cmpnle_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpnlt_ps.html"
+                                  title='fn x86intrin::sse::mm_cmpnlt_ps'>mm_cmpnlt_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpnlt_ss.html"
+                                  title='fn x86intrin::sse::mm_cmpnlt_ss'>mm_cmpnlt_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpord_ps.html"
+                                  title='fn x86intrin::sse::mm_cmpord_ps'>mm_cmpord_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpord_ss.html"
+                                  title='fn x86intrin::sse::mm_cmpord_ss'>mm_cmpord_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpunord_ps.html"
+                                  title='fn x86intrin::sse::mm_cmpunord_ps'>mm_cmpunord_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cmpunord_ss.html"
+                                  title='fn x86intrin::sse::mm_cmpunord_ss'>mm_cmpunord_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_comieq_ss.html"
+                                  title='fn x86intrin::sse::mm_comieq_ss'>mm_comieq_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_comige_ss.html"
+                                  title='fn x86intrin::sse::mm_comige_ss'>mm_comige_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_comigt_ss.html"
+                                  title='fn x86intrin::sse::mm_comigt_ss'>mm_comigt_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_comile_ss.html"
+                                  title='fn x86intrin::sse::mm_comile_ss'>mm_comile_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_comilt_ss.html"
+                                  title='fn x86intrin::sse::mm_comilt_ss'>mm_comilt_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_comineq_ss.html"
+                                  title='fn x86intrin::sse::mm_comineq_ss'>mm_comineq_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cvt_si2ss.html"
+                                  title='fn x86intrin::sse::mm_cvt_si2ss'>mm_cvt_si2ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cvt_ss2si.html"
+                                  title='fn x86intrin::sse::mm_cvt_ss2si'>mm_cvt_ss2si</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cvtsi32_ss.html"
+                                  title='fn x86intrin::sse::mm_cvtsi32_ss'>mm_cvtsi32_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cvtsi64_ss.html"
+                                  title='fn x86intrin::sse::mm_cvtsi64_ss'>mm_cvtsi64_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cvtss_f32.html"
+                                  title='fn x86intrin::sse::mm_cvtss_f32'>mm_cvtss_f32</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cvtss_si32.html"
+                                  title='fn x86intrin::sse::mm_cvtss_si32'>mm_cvtss_si32</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cvtss_si64.html"
+                                  title='fn x86intrin::sse::mm_cvtss_si64'>mm_cvtss_si64</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cvtt_ss2si.html"
+                                  title='fn x86intrin::sse::mm_cvtt_ss2si'>mm_cvtt_ss2si</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cvttss_si32.html"
+                                  title='fn x86intrin::sse::mm_cvttss_si32'>mm_cvttss_si32</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_cvttss_si64.html"
+                                  title='fn x86intrin::sse::mm_cvttss_si64'>mm_cvttss_si64</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_div_ps.html"
+                                  title='fn x86intrin::sse::mm_div_ps'>mm_div_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_div_ss.html"
+                                  title='fn x86intrin::sse::mm_div_ss'>mm_div_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_get_exception_mask.html"
+                                  title='fn x86intrin::sse::mm_get_exception_mask'>mm_get_exception_mask</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_get_exception_state.html"
+                                  title='fn x86intrin::sse::mm_get_exception_state'>mm_get_exception_state</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_get_flush_zero_mode.html"
+                                  title='fn x86intrin::sse::mm_get_flush_zero_mode'>mm_get_flush_zero_mode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_get_rounding_mode.html"
+                                  title='fn x86intrin::sse::mm_get_rounding_mode'>mm_get_rounding_mode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_getcsr.html"
+                                  title='fn x86intrin::sse::mm_getcsr'>mm_getcsr</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_load1_ps.html"
+                                  title='fn x86intrin::sse::mm_load1_ps'>mm_load1_ps</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_load_ps.html"
+                                  title='fn x86intrin::sse::mm_load_ps'>mm_load_ps</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_load_ps1.html"
+                                  title='fn x86intrin::sse::mm_load_ps1'>mm_load_ps1</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_load_ss.html"
+                                  title='fn x86intrin::sse::mm_load_ss'>mm_load_ss</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_loadr_ps.html"
+                                  title='fn x86intrin::sse::mm_loadr_ps'>mm_loadr_ps</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_loadu_ps.html"
+                                  title='fn x86intrin::sse::mm_loadu_ps'>mm_loadu_ps</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_max_ps.html"
+                                  title='fn x86intrin::sse::mm_max_ps'>mm_max_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_max_ss.html"
+                                  title='fn x86intrin::sse::mm_max_ss'>mm_max_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_min_ps.html"
+                                  title='fn x86intrin::sse::mm_min_ps'>mm_min_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_min_ss.html"
+                                  title='fn x86intrin::sse::mm_min_ss'>mm_min_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_move_ss.html"
+                                  title='fn x86intrin::sse::mm_move_ss'>mm_move_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_movehl_ps.html"
+                                  title='fn x86intrin::sse::mm_movehl_ps'>mm_movehl_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_movelh_ps.html"
+                                  title='fn x86intrin::sse::mm_movelh_ps'>mm_movelh_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_movemask_ps.html"
+                                  title='fn x86intrin::sse::mm_movemask_ps'>mm_movemask_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_mul_ps.html"
+                                  title='fn x86intrin::sse::mm_mul_ps'>mm_mul_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_mul_ss.html"
+                                  title='fn x86intrin::sse::mm_mul_ss'>mm_mul_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_or_ps.html"
+                                  title='fn x86intrin::sse::mm_or_ps'>mm_or_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_rcp_ps.html"
+                                  title='fn x86intrin::sse::mm_rcp_ps'>mm_rcp_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_rcp_ss.html"
+                                  title='fn x86intrin::sse::mm_rcp_ss'>mm_rcp_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_rsqrt_ps.html"
+                                  title='fn x86intrin::sse::mm_rsqrt_ps'>mm_rsqrt_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_rsqrt_ss.html"
+                                  title='fn x86intrin::sse::mm_rsqrt_ss'>mm_rsqrt_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_set1_ps.html"
+                                  title='fn x86intrin::sse::mm_set1_ps'>mm_set1_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_set_exception_mask.html"
+                                  title='fn x86intrin::sse::mm_set_exception_mask'>mm_set_exception_mask</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_set_exception_state.html"
+                                  title='fn x86intrin::sse::mm_set_exception_state'>mm_set_exception_state</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_set_flush_zero_mode.html"
+                                  title='fn x86intrin::sse::mm_set_flush_zero_mode'>mm_set_flush_zero_mode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_set_ps.html"
+                                  title='fn x86intrin::sse::mm_set_ps'>mm_set_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_set_ps1.html"
+                                  title='fn x86intrin::sse::mm_set_ps1'>mm_set_ps1</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_set_rounding_mode.html"
+                                  title='fn x86intrin::sse::mm_set_rounding_mode'>mm_set_rounding_mode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_set_ss.html"
+                                  title='fn x86intrin::sse::mm_set_ss'>mm_set_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_setcsr.html"
+                                  title='fn x86intrin::sse::mm_setcsr'>mm_setcsr</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_setr_ps.html"
+                                  title='fn x86intrin::sse::mm_setr_ps'>mm_setr_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_setzero_ps.html"
+                                  title='fn x86intrin::sse::mm_setzero_ps'>mm_setzero_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_sfense.html"
+                                  title='fn x86intrin::sse::mm_sfense'>mm_sfense</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_shuffle.html"
+                                  title='fn x86intrin::sse::mm_shuffle'>mm_shuffle</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_shuffle_ps.html"
+                                  title='fn x86intrin::sse::mm_shuffle_ps'>mm_shuffle_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_sqrt_ps.html"
+                                  title='fn x86intrin::sse::mm_sqrt_ps'>mm_sqrt_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_sqrt_ss.html"
+                                  title='fn x86intrin::sse::mm_sqrt_ss'>mm_sqrt_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_store1_ps.html"
+                                  title='fn x86intrin::sse::mm_store1_ps'>mm_store1_ps</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_store_ps.html"
+                                  title='fn x86intrin::sse::mm_store_ps'>mm_store_ps</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_store_ps1.html"
+                                  title='fn x86intrin::sse::mm_store_ps1'>mm_store_ps1</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_store_ss.html"
+                                  title='fn x86intrin::sse::mm_store_ss'>mm_store_ss</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_storer_ps.html"
+                                  title='fn x86intrin::sse::mm_storer_ps'>mm_storer_ps</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_storeu_ps.html"
+                                  title='fn x86intrin::sse::mm_storeu_ps'>mm_storeu_ps</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_stream_ps.html"
+                                  title='fn x86intrin::sse::mm_stream_ps'>mm_stream_ps</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_sub_ps.html"
+                                  title='fn x86intrin::sse::mm_sub_ps'>mm_sub_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_sub_ss.html"
+                                  title='fn x86intrin::sse::mm_sub_ss'>mm_sub_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_transpose4_ps.html"
+                                  title='fn x86intrin::sse::mm_transpose4_ps'>mm_transpose4_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_ucomieq_ss.html"
+                                  title='fn x86intrin::sse::mm_ucomieq_ss'>mm_ucomieq_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_ucomige_ss.html"
+                                  title='fn x86intrin::sse::mm_ucomige_ss'>mm_ucomige_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_ucomigt_ss.html"
+                                  title='fn x86intrin::sse::mm_ucomigt_ss'>mm_ucomigt_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_ucomile_ss.html"
+                                  title='fn x86intrin::sse::mm_ucomile_ss'>mm_ucomile_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_ucomilt_ss.html"
+                                  title='fn x86intrin::sse::mm_ucomilt_ss'>mm_ucomilt_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_ucomineq_ss.html"
+                                  title='fn x86intrin::sse::mm_ucomineq_ss'>mm_ucomineq_ss</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_unpackhi_ps.html"
+                                  title='fn x86intrin::sse::mm_unpackhi_ps'>mm_unpackhi_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_unpacklo_ps.html"
+                                  title='fn x86intrin::sse::mm_unpacklo_ps'>mm_unpacklo_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.mm_xor_ps.html"
+                                  title='fn x86intrin::sse::mm_xor_ps'>mm_xor_ps</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "x86intrin";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
